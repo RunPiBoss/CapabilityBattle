@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.thec.mapper.LadderHistoryMapper">
+    <select id="selectOneHistory" resultType="ladderHistory" parameterType="com.thec.entity.LadderHistory">
+        select * from cb_ladder_history
+        <where>
+            <if test="num != null and num != 0">
+                and num = ${num}
+            </if>
+            and my_id = ${myId}
+            and time = "${time}"
+        </where>
+    </select>
+</mapper>
