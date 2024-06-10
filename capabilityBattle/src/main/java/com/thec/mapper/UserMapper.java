@@ -26,6 +26,9 @@ public interface UserMapper extends BaseMapper<User> {
      * @return
      */
     List<Menu> selectMenuByUserId(Long id);
+<<<<<<< HEAD
 
     void insertUser(User user);
+=======
+>>>>>>> 7abda4eb891bf5278e9eb922b809366a41d02973
 }

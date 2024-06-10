@@ -9,11 +9,18 @@
                         </el-menu-item>
                     </el-menu>
                 </div>
+<<<<<<< HEAD
                 <!-- class都是a/b得形式，是使用了tailwind得库，在/src/assets/tailwind.css，w-4/6表示占据父元素4/6 -->
                 <div class="w-4/6">
                     <NavMenu />
                 </div>
                 <div class="w-3/12 pt-1 flex items-center justify-start space-x-8">
+=======
+                <div class="w-4/6">
+                    <NavMenu />
+                </div>
+                <div class="w-2/5 pt-1 flex items-center justify-start space-x-8">
+>>>>>>> 7abda4eb891bf5278e9eb922b809366a41d02973
                     <div class="block">
                         <el-avatar shape="square" :size="50" :src="squareUrl" />
                     </div>

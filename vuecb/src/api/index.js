@@ -8,6 +8,7 @@ export function login(data) {
   });
 }
 
+<<<<<<< HEAD
 export function register(data) {
   return service({
     url: "/user/register",
@@ -15,6 +16,8 @@ export function register(data) {
     data,
   });
 }
+=======
+>>>>>>> 7abda4eb891bf5278e9eb922b809366a41d02973
 export function logout() {
   return service({
     url: "/user/logout",
@@ -162,7 +165,11 @@ export function submitLadderTitle(data) {
   });
 }
 
+<<<<<<< HEAD
 export function getLadderHistoryOne(data) {
+=======
+export function getLadderHistory(data) {
+>>>>>>> 7abda4eb891bf5278e9eb922b809366a41d02973
   return service({
     url: `/ladder/historyOne`,
     method: "post",
@@ -170,6 +177,7 @@ export function getLadderHistoryOne(data) {
   });
 }
 
+<<<<<<< HEAD
 export function getLadderHistory() {
   return service({
     url: "/ladder/history",
@@ -201,3 +209,5 @@ export function delComment(data){
     method: "delete",
   });
 }
+=======
+>>>>>>> 7abda4eb891bf5278e9eb922b809366a41d02973

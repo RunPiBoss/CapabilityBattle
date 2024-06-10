@@ -1,6 +1,9 @@
 <template>
     <div>
+<<<<<<< HEAD
         <h1 class="text-2xl font-mono" style="text-align: center">好友对战记录</h1>
+=======
+>>>>>>> 7abda4eb891bf5278e9eb922b809366a41d02973
         <el-table :data="tableData" style="width: 90%">
             <el-table-column prop="num" label="场次" width="180" />
             <el-table-column prop="time" label="对战日期" sortable width="180" />

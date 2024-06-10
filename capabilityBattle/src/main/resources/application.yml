@@ -5,7 +5,11 @@ spring:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://127.0.0.1:3306/project
     username: root
+<<<<<<< HEAD
     password: LZl_154260
+=======
+    password: 123456
+>>>>>>> 7abda4eb891bf5278e9eb922b809366a41d02973
 server:
   port: 8080
   servlet:

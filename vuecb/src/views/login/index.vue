@@ -21,7 +21,10 @@
                     </div>
                     <div id="btn">
                         <button class="loginbtn" @click="handleLogin(ruleFormRef)">登陆</button>
+<<<<<<< HEAD
                       <div class="others">没有账号？<span class="others_word cursor-pointer text-secondary hover:text-blue-50" @click="$router.push('/register')">立即注册</span></div>
+=======
+>>>>>>> 7abda4eb891bf5278e9eb922b809366a41d02973
                     </div>
                 </el-card>
             </div>
@@ -224,6 +227,7 @@ const handleLogin = (formEl) => {
         background-color: rgba(207, 38, 38, 0.8);
     }
 
+<<<<<<< HEAD
     .others{
         //width: 50%;
         margin-top: 2%;
@@ -234,5 +238,7 @@ const handleLogin = (formEl) => {
       font-weight: bold;
 
     }
+=======
+>>>>>>> 7abda4eb891bf5278e9eb922b809366a41d02973
 }
 </style>

@@ -45,10 +45,13 @@ public class UserController {
         return userService.login(user);
     }
 
+<<<<<<< HEAD
     @ApiOperation("注册接口")
     @PostMapping("/register")
     public Result register(@RequestBody User user){return userService.register(user);}
 
+=======
+>>>>>>> 7abda4eb891bf5278e9eb922b809366a41d02973
     @ApiOperation("菜单接口")
     @GetMapping("/navData")
     public Result navData() {

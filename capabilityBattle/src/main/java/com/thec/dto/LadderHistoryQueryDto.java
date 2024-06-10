@@ -23,5 +23,9 @@ public class LadderHistoryQueryDto {
 
     private String time;
 
+<<<<<<< HEAD
     private int ownerId;
+=======
+    private int num;
+>>>>>>> 7abda4eb891bf5278e9eb922b809366a41d02973
 }

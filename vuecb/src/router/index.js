@@ -13,6 +13,7 @@ const routes = [
     component: () => import("../views/login/index.vue"),
   },
   {
+<<<<<<< HEAD
     path: "/register",
     name: "register",
     component: () => import("../views/register/index.vue"),
@@ -34,6 +35,12 @@ const routes = [
       },
     ]
   }
+=======
+    path: "/home",
+    name: "home",
+    component: () => import("../views/home/index.vue"),
+  },
+>>>>>>> 7abda4eb891bf5278e9eb922b809366a41d02973
 ];
 const router = new createRouter({
   history: createWebHistory(),
@@ -41,7 +48,11 @@ const router = new createRouter({
 });
 
 router.beforeEach(async (to, from, next) => {
+<<<<<<< HEAD
   if (to.path === "/login" || to.path === "/register") {
+=======
+  if (to.path === "/login") {
+>>>>>>> 7abda4eb891bf5278e9eb922b809366a41d02973
     next();
   } else {
     if (getToken() == null) {

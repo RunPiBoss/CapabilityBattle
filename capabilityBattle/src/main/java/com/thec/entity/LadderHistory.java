@@ -28,6 +28,10 @@ public class LadderHistory {
     private String time;
 
     private int playAdd;
+<<<<<<< HEAD
     // 战力值
+=======
+
+>>>>>>> 7abda4eb891bf5278e9eb922b809366a41d02973
     private int rating;
 }

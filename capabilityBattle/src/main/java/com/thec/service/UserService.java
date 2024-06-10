@@ -1,6 +1,9 @@
 package com.thec.service;
 
+<<<<<<< HEAD
 import com.thec.dto.UserDto;
+=======
+>>>>>>> 7abda4eb891bf5278e9eb922b809366a41d02973
 import com.thec.entity.Result;
 import com.thec.entity.User;
 import org.springframework.web.multipart.MultipartFile;
@@ -20,6 +23,7 @@ public interface UserService {
      */
     Result login(User user);
 
+<<<<<<< HEAD
 
     /**
      * 注册
@@ -28,6 +32,8 @@ public interface UserService {
      */
     Result register(User user);
 
+=======
+>>>>>>> 7abda4eb891bf5278e9eb922b809366a41d02973
     /**
      * 获取菜单信息
      * @param

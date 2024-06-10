@@ -449,7 +449,11 @@ const handleCreateRoom = async () => {
     showQuitFlag.value = true
 }
 const token = getToken();
+<<<<<<< HEAD
 var ws = new WebSocket(`ws://59.110.28.248:8080/capabilityBattle/ws/${token}`);
+=======
+var ws = new WebSocket(`ws://127.0.0.1:8080/capabilityBattle/ws/${token}`);
+>>>>>>> 7abda4eb891bf5278e9eb922b809366a41d02973
 ws.onopen = function (evt) {
     console.log("Connection open ...");
 };

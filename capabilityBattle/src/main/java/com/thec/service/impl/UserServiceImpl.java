@@ -24,7 +24,10 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
 import org.springframework.util.ClassUtils;
 import org.springframework.web.multipart.MultipartFile;
+<<<<<<< HEAD
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+=======
+>>>>>>> 7abda4eb891bf5278e9eb922b809366a41d02973
 
 import java.io.File;
 import java.io.IOException;
@@ -56,12 +59,19 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public Result login(User user) {
+<<<<<<< HEAD
         System.out.println("user="+user);
         UsernamePasswordAuthenticationToken authenticationToken =
                 new UsernamePasswordAuthenticationToken(user.getUserName(), user.getPassword());
         System.out.println("authenticationToken="+authenticationToken);
         Authentication authentication = authenticationManager.authenticate(authenticationToken);
         System.out.println("authentication="+authentication);
+=======
+        UsernamePasswordAuthenticationToken authenticationToken =
+                new UsernamePasswordAuthenticationToken(user.getUserName(), user.getPassword());
+        Authentication authentication = authenticationManager.authenticate(authenticationToken);
+
+>>>>>>> 7abda4eb891bf5278e9eb922b809366a41d02973
         if (Objects.isNull(authentication)) {
             throw new RuntimeException("登录失败");
         }
@@ -72,11 +82,15 @@ public class UserServiceImpl implements UserService {
 
         Map<String, String> map = new HashMap<>();
         map.put("token", jwt);
+<<<<<<< HEAD
         System.out.println(jwt);
+=======
+>>>>>>> 7abda4eb891bf5278e9eb922b809366a41d02973
         return new Result(200, "登录成功", map);
     }
 
     @Override
+<<<<<<< HEAD
     public Result register(User user) {
         // 检查用户名、密码和昵称是否为空
         if (user.getUserName() == null || user.getUserName().isEmpty() ||
@@ -104,6 +118,8 @@ public class UserServiceImpl implements UserService {
 
 
     @Override
+=======
+>>>>>>> 7abda4eb891bf5278e9eb922b809366a41d02973
     public Result navData() {
         List<Menu> menus;
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();

@@ -4,8 +4,13 @@
     <select id="selectOneHistory" resultType="ladderHistory" parameterType="com.thec.entity.LadderHistory">
         select * from cb_ladder_history
         <where>
+<<<<<<< HEAD
             <if test="ownerId != null and ownerId != 0">
                 and ownerId = ${ownerId}
+=======
+            <if test="num != null and num != 0">
+                and num = ${num}
+>>>>>>> 7abda4eb891bf5278e9eb922b809366a41d02973
             </if>
             and my_id = ${myId}
             and time = "${time}"

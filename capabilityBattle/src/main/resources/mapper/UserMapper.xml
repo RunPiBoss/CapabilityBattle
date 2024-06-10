@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.thec.mapper.UserMapper">
+<<<<<<< HEAD
     <insert id="insertUser" parameterType="com.thec.entity.User" useGeneratedKeys="true" keyProperty="id">
         INSERT INTO cb_user (user_name, password, nick_name)
         VALUES (#{userName}, #{password}, #{nickName})
     </insert>
+=======
+>>>>>>> 7abda4eb891bf5278e9eb922b809366a41d02973
 
     <select id="selectPermsByUserId" resultType="java.lang.String">
         select cm.perms

@@ -1,5 +1,6 @@
 package com.thec.service.impl;
 
+<<<<<<< HEAD
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.thec.config.RedisCache;
 import com.thec.dto.HistoryQueryDto;
@@ -14,6 +15,16 @@ import com.thec.mapper.UserMapper;
 import com.thec.service.LadderHistoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.context.SecurityContextHolder;
+=======
+import com.thec.dto.HistoryQueryDto;
+import com.thec.dto.LadderHistoryQueryDto;
+import com.thec.entity.History;
+import com.thec.entity.Result;
+import com.thec.mapper.HistoryMapper;
+import com.thec.mapper.LadderHistoryMapper;
+import com.thec.service.LadderHistoryService;
+import org.springframework.beans.factory.annotation.Autowired;
+>>>>>>> 7abda4eb891bf5278e9eb922b809366a41d02973
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -31,6 +42,7 @@ import java.util.List;
 public class LadderHistoryServiceImpl implements LadderHistoryService {
 
     @Autowired
+<<<<<<< HEAD
     private RedisCache redisCache;
 
     @Autowired
@@ -55,6 +67,17 @@ public class LadderHistoryServiceImpl implements LadderHistoryService {
 
     @Override
     public Result<List<LadderHistory>> searchOneHistory(LadderHistoryQueryDto dto) {
+=======
+    private LadderHistoryMapper ladderHistoryMapper;
+
+    @Override
+    public Result<List<History>> searchHistory() {
+        return null;
+    }
+
+    @Override
+    public Result<List<History>> searchOneHistory(LadderHistoryQueryDto dto) {
+>>>>>>> 7abda4eb891bf5278e9eb922b809366a41d02973
         return new Result(200,"请求成功",ladderHistoryMapper.selectOneHistory(dto));
     }
 }

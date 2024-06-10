@@ -3,7 +3,10 @@ package com.thec.controller;
 import com.thec.dto.HistoryQueryDto;
 import com.thec.dto.LadderHistoryQueryDto;
 import com.thec.entity.History;
+<<<<<<< HEAD
 import com.thec.entity.LadderHistory;
+=======
+>>>>>>> 7abda4eb891bf5278e9eb922b809366a41d02973
 import com.thec.entity.Result;
 import com.thec.service.HistoryService;
 import com.thec.service.LadderHistoryService;
@@ -36,13 +39,21 @@ public class LadderHistoryController {
 
     @ApiOperation("查询历史记录")
     @RequestMapping(value = "/history", method = RequestMethod.GET)
+<<<<<<< HEAD
     public Result<List<LadderHistory>> searchHistory() {
+=======
+    public Result<List<History>> searchHistory() {
+>>>>>>> 7abda4eb891bf5278e9eb922b809366a41d02973
         return ladderHistoryService.searchHistory();
     }
 
     @ApiOperation("查询本次对局记录")
     @RequestMapping(value = "/historyOne", method = RequestMethod.POST)
+<<<<<<< HEAD
     public Result<List<LadderHistory>> searchHistory(@RequestBody LadderHistoryQueryDto dto) {
+=======
+    public Result<List<History>> searchHistory(@RequestBody LadderHistoryQueryDto dto) {
+>>>>>>> 7abda4eb891bf5278e9eb922b809366a41d02973
         return ladderHistoryService.searchOneHistory(dto);
     }
 

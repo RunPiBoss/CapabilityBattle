@@ -51,8 +51,11 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 //放行静态资源
                 .antMatchers("/**/*.css","/**/*.jpg").permitAll()
                 .antMatchers("/images/**").permitAll()
+<<<<<<< HEAD
                 // 放行注册接口
                 .antMatchers("/user/register").permitAll()
+=======
+>>>>>>> 7abda4eb891bf5278e9eb922b809366a41d02973
                 // 除上面外的所有请求全部需要鉴权认证
                 .anyRequest().authenticated();
         http

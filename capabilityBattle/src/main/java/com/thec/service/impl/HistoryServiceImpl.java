@@ -34,7 +34,10 @@ public class HistoryServiceImpl implements HistoryService {
     private static final int WIN_SCORE = 20;
     private static final int LOSE_SCORE = -10;
 
+<<<<<<< HEAD
     // LambdaQueryWrapper 查询
+=======
+>>>>>>> 7abda4eb891bf5278e9eb922b809366a41d02973
     @Override
     public Result<List<History>> searchHistory() {
         LambdaQueryWrapper<History> queryWrapper = new LambdaQueryWrapper<>();

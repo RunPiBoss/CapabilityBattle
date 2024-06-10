@@ -182,7 +182,11 @@ import { reactive, ref, onBeforeUnmount } from "vue";
 import { getUser, setUser } from '../../../../utils/user';
 import {
   createLadderRoom, joinLadderRoom, getUserInfoById, getUserInfo,
+<<<<<<< HEAD
   quitLadderRoom, ladderPrepare, startLadderCompetition, submitLadderTitle, getLadderHistoryOne
+=======
+  quitLadderRoom, ladderPrepare, startLadderCompetition, submitLadderTitle, getLadderHistory
+>>>>>>> 7abda4eb891bf5278e9eb922b809366a41d02973
 } from '../../../../api'
 import { mainStore } from "../../../../store";
 import { ElNotification, ElMessageBox } from 'element-plus';
@@ -310,7 +314,11 @@ const handleGetHistoryOne = async (time, winnerId) => {
     myId: user.id,
     time
   }
+<<<<<<< HEAD
   let resData = await getLadderHistoryOne(historyOneData)
+=======
+  let resData = await getLadderHistory(historyOneData)
+>>>>>>> 7abda4eb891bf5278e9eb922b809366a41d02973
   mainStore().setCompetitionData(resData)
 }
 //关闭测试结果窗口
@@ -484,8 +492,12 @@ const handleCloseCode = () => {
     })
   codeValue.value.code = ""
 }
+<<<<<<< HEAD
 // 这里监听的地址是后端的地址
 var ws = new WebSocket(`ws://59.110.28.248:8080/capabilityBattle/ws/${token}`);
+=======
+var ws = new WebSocket(`ws://127.0.0.1:8080/capabilityBattle/ws/${token}`);
+>>>>>>> 7abda4eb891bf5278e9eb922b809366a41d02973
 ws.onopen = function (evt) {
   console.log("Connection open ...");
 };
