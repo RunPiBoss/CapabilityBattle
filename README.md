@@ -4,7 +4,7 @@
 Capability Battle能力对战平台
 
 #### 项目预览
-登录注册：![img_1.png](img_1.png)
+登录注册：
 ![](readme_img/img_2.png)
 首页：
 ![](readme_img/img_3.png)
