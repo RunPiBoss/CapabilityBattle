@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: capabilityBattle
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/project
+    username: root
+    password: LZl_154260
+server:
+  port: 8080
+  servlet:
+    context-path: /capabilityBattle
+mybatis-plus:
+  type-aliases-package: com.thec.entity # 别名扫描包
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
