@@ -3,7 +3,6 @@
 #### 介绍
 Capability Battle能力对战平台
 
-<<<<<<< HEAD
 #### 项目预览
 登录注册：![img_1.png](img_1.png)
 ![](readme_img/img_2.png)
@@ -25,7 +24,7 @@ Css框架：tailwind
 1. 本地需要安装G++的环境和java的环境，因为代码评判功能依赖本地的环境，如果不会参考教程[c++环境配置](https://www.cnblogs.com/wongdzoendzi/p/18236247)
 
 2. 把项目部署到服务器时，注意修改主页的头像地址和webscoket的请求地址，分别在/vuecd/src/views/home/content/下的/index/index.vue和/friend,/ladder目录中，将127.0.0.1改为服务器的ip地址或域名，如下：
-  ![](img.png)
+    ![](img.png)
 
 3. 服务器部署时候，后端运行jar包，前端使用命令`npm run build`将前端打包为dist文件夹，使用nginx反向代理，注意：nginx需要重写配置，操作如下：
 

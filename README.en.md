@@ -1,6 +1,5 @@
 # Capability Battle
 
-<<<<<<< HEAD
 #### 介绍
 Capability Battle能力对战平台
 
