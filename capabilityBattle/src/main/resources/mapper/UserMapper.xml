@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.thec.mapper.UserMapper">
+    <insert id="insertUser" parameterType="com.thec.entity.User" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO cb_user (user_name, password, nick_name)
+        VALUES (#{userName}, #{password}, #{nickName})
+    </insert>
+
+    <select id="selectPermsByUserId" resultType="java.lang.String">
+        select cm.perms
+        from cb_user_role cur
+                 LEFT JOIN cb_role cr
+                           on cur.role_id = cr.id
+                 LEFT JOIN
+             cb_role_menu crm
+             ON crm.role_id = cur.role_id
+                 LEFT JOIN cb_menu cm
+                           on cm.id = crm.menu_id
+        where cr.status = 0
+          AND cur.user_id = 3
+    </select>
+
+    <select id="selectMenuByUserId" parameterType="long" resultType="com.thec.entity.Menu">
+        select cm.*
+        FROM cb_user cu
+                 LEFT JOIN
+             cb_user_role cur
+             on cur.user_id = cu.id
+                 LEFT JOIN
+             cb_role_menu crm
+             on crm.role_id = cur.role_id
+                 LEFT JOIN
+             cb_menu cm
+             on cm.id = crm.menu_id
+        where cu.id = ${id}
+    </select>
+</mapper>

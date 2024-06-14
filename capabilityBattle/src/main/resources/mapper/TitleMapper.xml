@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.thec.mapper.TitleMapper">
+    <select id="getOneTitle" resultType="com.thec.entity.Title">
+        SELECT * FROM `cb_title` order by rand() limit 1
+    </select>
+</mapper>
